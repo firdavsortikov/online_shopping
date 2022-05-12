@@ -1,0 +1,116 @@
+@font-face {
+    font-family: "yoz";
+    src: url("../OpenSans/OpenSans-Light.ttf") format("truetype");
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "yoz";
+}
+body {
+    background-color: rgb(235, 215, 253);
+}
+h1 {
+    text-align: center;
+    margin-top: 2rem;
+    font-weight: 800;
+    color: rgb(226, 43, 202);
+}
+.wrapper {
+    margin: 0 auto;
+    height: 800px;
+    width: 1700px;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.wrapper .card {
+    width: 16%;
+    height: 45%;
+    background-color: rgb(247, 241, 241);
+    border-radius: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+.wrapper p {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-weight: 700;
+}
+.wrapper h2 {
+    margin-top: 8px;
+    font-size: 20px;
+}
+.wrapper .card img {
+    height: 70%;
+    width: 90%;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+img:hover {
+    opacity: 80%;
+    transition: 1s ease-out;
+    transform: scale(1.1);
+}
+.wrapper .card h2 {
+    background-color: rgb(190, 195, 235);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    height: 50px;
+    padding-top: 15px;
+    color: rgb(6, 21, 230);
+    font-size: 17px;
+}
+.wrapper .discount {
+    height: 22px;
+    width: 55px;
+    border: 1px solid red;
+    border-radius: 10px;
+    color: white;
+    background-color: red;
+    margin-left: 40%;
+}
+@media (min-width: 0) and (max-width:474.9px) {
+    .wrapper {
+        width: 100%;
+        height: 100%;
+    }
+    .wrapper .card {
+        width: 90%;
+        margin: 10px;
+    }
+}
+@media (min-width:475px) and (max-width:775.9px) {
+    .wrapper {
+        width: 100%;
+        height: 100%;
+    }
+    .wrapper .card {
+        width: 40%;
+        margin: 10px;
+    }
+}
+@media (min-width:776px) and (max-width: 989.9px) {
+    .wrapper {
+        width: 100%;
+        height: 100%;
+    }
+    .wrapper .card {
+        width: 30%;
+        margin: 10px;
+    }
+}
+@media (min-width:990px) and (max-width:1700px) {
+    .wrapper {
+        width: 100%;
+        height: 100%;
+    }
+    .wrapper .card {
+        width: 15%;
+        margin: 5px;
+    }
+}
